@@ -1,0 +1,28 @@
+.productWrapper {
+  display: flex;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  background-color: #ffffff;
+
+  img {
+    width: 25%;
+  }
+
+  .info {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .amount button {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .price {
+    width: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}

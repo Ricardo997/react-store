@@ -1,0 +1,70 @@
+.Home {
+  display: flex;
+
+  .loader {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+
+    img {
+      animation: rotation 1s infinite linear;
+    }
+
+    @keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+
+    .cartButton {
+      display: none;
+    }
+
+    .cartButton.active {
+      display: block;
+    }
+
+    button {
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 50%;
+      padding: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    img {
+      width: 2rem;
+    }
+  }
+}
+
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.cart.desktop {
+  min-width: 20%;
+}
+
+.cart.mobile {
+  display: none;
+}
+
+.cart.mobile.active {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
